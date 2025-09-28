@@ -1,0 +1,38 @@
+name: Convert notebooks and update dashboard
+
+on:
+  push:
+    paths:
+      - 'notebooks/**.ipynb'
+      - 'projects/**.ipynb'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install nbconvert
+        run: pip install nbconvert
+
+      - name: Convert notebooks to HTML
+        run: |
+          find notebooks -name "*.ipynb" -exec jupyter nbconvert --to html {} \;
+          find projects -name "*.ipynb" -exec jupyter nbconvert --to html {} \;
+
+      - name: Run index generator
+        run: python generate_index.py
+
+      - name: Commit updates
+        run: |
+          git config --global user.name "Dan Yunker"
+          git config --global user.email "Yunker.D@gmai.com"
+          git add .
+          git commit -m "Auto-convert notebooks and update dashboard"
+          git push

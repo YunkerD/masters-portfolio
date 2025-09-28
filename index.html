@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daniel Yunker – Masters Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2 {
+      color: #005a9c;
+    }
+    input, select, button {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    small {
+      color: #666;
+    }
+    .timeline, .contact, .badges, .progress {
+      margin-top: 2rem;
+    }
+    .dark-mode {
+      background-color: #1e1e1e;
+      color: #ddd;
+    }
+    .dark-mode a {
+      color: #9ecbff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🧠 Header -->
+  <h1>🎓 Daniel Yunker – Masters Portfolio</h1>
+  <p>Welcome to my evolving dashboard showcasing predictive analytics, asset intelligence, and stakeholder-ready projects from my Master of Data Science journey.</p>
+
+  <!-- 🔍 Search Bar -->
+  <label for="search-bar">Search Notebooks:</label>
+  <input type="text" id="search-bar" onkeyup="searchLinks()" placeholder="Type keywords…">
+
+  <!-- 📘 Semester Filter -->
+  <label for="semester-filter">Filter by Semester:</label>
+  <select id="semester-filter" onchange="filterLinks()">
+    <option value="all">All</option>
+    <option value="semester1">Semester 1</option>
+    <option value="semester2">Semester 2</option>
+  </select>
+
+  <!-- 🌗 Dark Mode Toggle -->
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <!-- 📚 Collapsible Semester Sections -->
+  <h2>📘 Semester 1</h2>
+  <button onclick="toggleSection('semester1-list')">Toggle Semester 1</button>
+  <ul id="semester1-list">
+<li><a href="projects/semester1/new_case_study.html">new_case_study.html</a></li><li><a href="notebooks/semester1/sample_notebook.ipynb">sample_notebook.ipynb</a><br><small>No summary available.</small></li><li><a href="projects/semester1/sample_project.ipynb">sample_project.ipynb</a><br><small>No summary available.</small></li><li><a href="projects/semester1/new_case_study.ipynb">new_case_study.ipynb</a><br><small># 📘 Semester 1 – New Case Study</small></li>  </ul>
+
+  <h2>📘 Semester 2</h2>
+  <button onclick="toggleSection('semester2-list')">Toggle Semester 2</button>
+  <ul id="semester2-list">
+  </ul>
+
+  <!-- 📅 Timeline -->
+  <div class="timeline">
+    <h2>📅 Academic Timeline</h2>
+    <ul>
+      <li><strong>Feb 2026:</strong> Recommence Master of Data Science at La Trobe</li>
+      <li><strong>Sep 2025:</strong> Portfolio automation and GitHub Pages deployment</li>
+      <li><strong>Aug 2025:</strong> Transition from FIFO mining to hybrid tech roles</li>
+    </ul>
+  </div>
+
+  <!-- 📈 Semester Progress -->
+  <div class="progress">
+    <h2>📈 Semester Progress</h2>
+    <label for="progress">Semester 1 Completion:</label>
+    <progress id="progress" value="70" max="100"></progress>
+    <small>70% complete</small>
+  </div>
+
+  <!-- 📞 Contact -->
+  <div class="contact">
+    <h2>📞 Contact</h2>
+    <p>Email: <a href="mailto:daniel.yunker@example.com">daniel.yunker@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/danielyunker" target="_blank">linkedin.com/in/danielyunker</a></p>
+    <p>GitHub: <a href="https://github.com/yunkerd" target="_blank">github.com/yunkerd</a></p>
+  </div>
+
+  <!-- 🏅 Badges -->
+  <div class="badges">
+    <h2>🏅 Repo Stats</h2>
+    <img src="https://img.shields.io/github/last-commit/yunkerd/masters-portfolio" alt="Last Commit">
+    <img src="https://img.shields.io/github/repo-size/yunkerd/masters-portfolio" alt="Repo Size">
+    <img src="https://img.shields.io/github/actions/workflow/status/yunkerd/masters-portfolio/update-index.yml" alt="Workflow Status">
+  </div>
+
+  <!-- 🔧 Scripts -->
+  <script>
+    function searchLinks() {
+      const input = document.getElementById("search-bar").value.toLowerCase();
+      const links = document.querySelectorAll("ul li");
+      links.forEach(link => {
+        if (link.innerHTML.toLowerCase().includes(input)) {
+          link.style.display = "list-item";
+        } else {
+          link.style.display = "none";
+        }
+      });
+    }
+
+    function filterLinks() {
+      const filter = document.getElementById("semester-filter").value;
+      const links = document.querySelectorAll("ul li");
+      links.forEach(link => {
+        if (filter === "all" || link.innerHTML.toLowerCase().includes(filter)) {
+          link.style.display = "list-item";
+        } else {
+          link.style.display = "none";
+        }
+      });
+    }
+
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "none" ? "block" : "none";
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+</html>
