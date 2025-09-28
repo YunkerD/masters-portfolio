@@ -31,8 +31,8 @@ jobs:
 
       - name: Commit updates
         run: |
-          git config --global user.name "Dan Yunker"
-          git config --global user.email "Yunker.D@gmai.com"
+          git config --global user.name "Daniel Yunker"
+          git config --global user.email "your-email@example.com"
           git add .
           git commit -m "Auto-convert notebooks and update dashboard"
           git push
