@@ -1,4 +1,8 @@
+Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) My name is Dan Yunker
+===================================================================================================================================
 
+Reliability Engineer
+--------------------
 🚀 Reliability Engineer pivoting into Machine Learning, Asset Intelligence, and Customer Success.
 
 🎓 Preparing for Master of Data Science at La Trobe (Feb 2026) with a Coursera Plus learning sprint.
