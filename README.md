@@ -4,9 +4,16 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Reliability Engineer
 --------------------
 🚀 Reliability Engineer pivoting into Machine Learning, Asset Intelligence, and Customer Success.
-
 🎓 Preparing for Master of Data Science at La Trobe (Feb 2026) with a Coursera Plus learning sprint.
 
+* 🌍  I'm based in Brisbane
+* 🖥️  See my portfolio at [linkedin](http://www.linkedin.com/in/ dan-yunker-36807a2a4)
+* ✉️  You can contact me at [yunker.daniel@gmail.com](mailto:yunker.daniel@gmail.com)
+* 🧠  I'm currently learning - 📊 \[ML Prep 2026\] Weekly roadmap, notebooks, and subject mapping aligned with La Trobe MDS
+
+
+## 🛠️ Automation
+This portfolio uses GitHub Actions to auto-update the dashboard whenever new notebooks are added.
 📂 Building a public GitHub portfolio to showcase predictive analytics, stakeholder-ready documentation, and academic alignment.
 
 Welcome to my evolving portfolio documenting my Master of Data Science journey at La Trobe University. This site auto-updates with notebooks, case studies, and projects focused on predictive analytics, asset intelligence, and stakeholder clarity.
@@ -24,24 +31,6 @@ Welcome to my evolving portfolio documenting my Master of Data Science journey a
 - Strategic asset management
 - Full-stack ML engineering
 - Visual communication for recruiters and academics
-
-## 🛠️ Automation
-This portfolio uses GitHub Actions to auto-update the dashboard whenever new notebooks are added.
-
-
----------------------------------------------------
-
-
-🚀 Reliability Engineer pivoting into Machine Learning, Asset Intelligence, and Customer Success.
-
-🎓 Preparing for Master of Data Science at La Trobe (Feb 2026) with a Coursera Plus learning sprint.
-
-📂 Building a public GitHub portfolio to showcase predictive analytics, stakeholder-ready documentation, and academic alignment.
-
-* 🌍  I'm based in Brisbane
-* 🖥️  See my portfolio at [linkedin](http://www.linkedin.com/in/ dan-yunker-36807a2a4)
-* ✉️  You can contact me at [yunker.daniel@gmail.com](mailto:yunker.daniel@gmail.com)
-* 🧠  I'm currently learning - 📊 \[ML Prep 2026\] Weekly roadmap, notebooks, and subject mapping aligned with La Trobe MDS
 
 <p align="left">
 <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" alt="Python" title="Python" width="36" height="36" /></a><a href="https://www.r-project.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/rlang-colored.svg" alt="rlang" title="rlang" width="36" height="36" /></a><a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" alt="Git" title="Git" width="36" height="36" /></a><a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/gnubash-colored.svg" alt="GNU Bash" title="GNU Bash" width="36" height="36" /></a><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" alt="VS Code" title="VS Code" width="36" height="36" /></a><a href="https://www.linux.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg" alt="Linux" title="Linux" width="36" height="36" /></a>
